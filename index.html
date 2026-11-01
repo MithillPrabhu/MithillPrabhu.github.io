@@ -482,7 +482,8 @@
   .hero-art .lbl { font-family: var(--mono); font-size: 11px; fill: var(--text-2); }
   .hero-art .j { will-change: rotate; }
   .hero-art { position: relative; }
-  .hero-art .grab { fill: transparent; stroke: none; cursor: grab; touch-action: none; pointer-events: all; }
+  .hero-art .grab { fill: transparent; stroke: none; cursor: grab; touch-action: none; pointer-events: all; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; }
+  .hero-art svg { -webkit-user-select: none; user-select: none; }
   .hero-art.dragging .grab, .hero-art.dragging { cursor: grabbing; }
   .drag-hint {
     margin: 6px 0 0; text-align: center;
@@ -961,6 +962,10 @@
       if (reduce) { cur = [0, 0, 0]; apply(null); }
       start();
     }
+    // Phones: SVG elements don't reliably honour touch-action, so the browser would claim the touch
+    // for scrolling and cancel the drag. Block scrolling only for touches that start on the gripper.
+    grab.addEventListener('touchstart', function (e) { e.preventDefault(); }, { passive: false });
+    grab.addEventListener('touchmove', function (e) { if (drag) e.preventDefault(); }, { passive: false });
     grab.addEventListener('pointerup', end);
     grab.addEventListener('pointercancel', end);
     grab.addEventListener('lostpointercapture', end);
