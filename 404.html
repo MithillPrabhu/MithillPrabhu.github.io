@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Page not found | Mithill Prabhu</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#ffffff">
+<meta name="color-scheme" content="light dark">
+<script>
+  (function () {
+    var t;
+    try { t = localStorage.getItem('theme'); } catch (e) {}
+    if (t !== 'light' && t !== 'dark') {
+      t = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    document.documentElement.setAttribute('data-theme', t);
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', t === 'dark' ? '#000000' : '#ffffff');
+  })();
+</script>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23111111'/%3E%3Ctext x='32' y='41' font-family='ui-monospace,Menlo,Consolas,monospace' font-size='24' font-weight='700' fill='%23fff' text-anchor='middle'%3EMP%3C/text%3E%3C/svg%3E">
+<style>
+  :root { --bg:#fff; --text:#111; --text-2:#5e5e5e; --line:#e6e6e6; --btn-text:#fff;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "SFMono-Regular", "JetBrains Mono", Menlo, Consolas, monospace; color-scheme: light; }
+  [data-theme="dark"] { --bg:#000; --text:#f2f2f2; --text-2:#a0a0a0; --line:#262626; --btn-text:#000; color-scheme: dark; }
+  *,*::before,*::after { box-sizing: border-box; }
+  html { -webkit-tap-highlight-color: transparent; -webkit-text-size-adjust: 100%; }
+  body { margin:0; min-height:100svh; display:grid; place-items:center; background:var(--bg); color:var(--text);
+    font-family:var(--sans); -webkit-font-smoothing:antialiased;
+    padding: max(24px, env(safe-area-inset-top)) max(24px, env(safe-area-inset-right)) max(24px, env(safe-area-inset-bottom)) max(24px, env(safe-area-inset-left)); }
+  main { text-align:center; max-width:420px; }
+  .art { width:160px; margin:0 auto 32px; }
+  .art svg { display:block; width:100%; height:auto; overflow:visible; }
+  .ln { fill:var(--bg); stroke:var(--text); stroke-width:1.5; stroke-linejoin:round; stroke-linecap:round; vector-effect:non-scaling-stroke; }
+  path.ln:not([d$="Z"]) { fill:none; }
+  .dim { fill:none; stroke:var(--text-2); stroke-width:1; stroke-dasharray:3 6; opacity:.6; vector-effect:non-scaling-stroke; }
+  .code { font-family:var(--mono); font-size:13px; color:var(--text-2); }
+  h1 { margin:10px 0 0; font-size:32px; line-height:1.15; letter-spacing:-0.02em; }
+  p { margin:12px 0 0; color:var(--text-2); line-height:1.6; }
+  a.btn { display:inline-flex; align-items:center; justify-content:center; min-height:46px; margin-top:28px; padding:0 22px;
+    border-radius:10px; background:var(--text); color:var(--btn-text); font-weight:600; text-decoration:none;
+    touch-action:manipulation; user-select:none; -webkit-user-select:none; transition: transform 140ms cubic-bezier(0.23,1,0.32,1), opacity 150ms ease; }
+  a.btn:active { transform: scale(0.97); }
+  @media (hover:hover) and (pointer:fine) { a.btn:hover { opacity:.85; } }
+  :focus-visible { outline:2px solid var(--text); outline-offset:3px; border-radius:4px; }
+  @media (prefers-reduced-motion: reduce) { a.btn:active { transform:none; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="art" aria-hidden="true"><svg viewBox="0 0 400 420" focusable="false">
+        <path class="dim" d="M10 330 A190 190 0 0 1 390 330"/>
+        <line class="dim" x1="200" y1="330" x2="200" y2="120"/>
+        <line class="ln" x1="30" y1="400" x2="370" y2="400"/>
+        <path class="ln" d="M130 400 L146 368 L254 368 L270 400 Z"/>
+        <rect class="ln" x="150" y="350" width="100" height="18" rx="4"/>
+        <path class="ln" d="M176 350 L184 334 M224 350 L216 334"/>
+        <g class="j j1">
+          <rect class="ln" x="0" y="-18" width="161.6" height="36" rx="18" transform="translate(200 330) rotate(-111.8)"/>
+          <line class="dim" x1="178" y1="290" x2="152" y2="224"/>
+          <g class="j j2">
+            <rect class="ln" x="0" y="-14" width="164.9" height="28" rx="14" transform="translate(140 180) rotate(-14.04)"/>
+            <g class="j j3">
+              <rect class="ln" x="292" y="140" width="16" height="44" rx="3"/>
+              <rect class="ln" x="274" y="184" width="52" height="10" rx="3"/>
+              <path class="ln" d="M283 194 V222 L290 230 M317 194 V222 L310 230"/>
+              <circle class="ln" cx="300" cy="140" r="12"/>
+              <circle class="ln" cx="300" cy="140" r="3.5"/>
+            </g>
+            <circle class="ln" cx="140" cy="180" r="18"/>
+            <circle class="ln" cx="140" cy="180" r="5"/>
+          </g>
+          <circle class="ln" cx="200" cy="330" r="24"/>
+          <circle class="ln" cx="200" cy="330" r="7"/>
+        </g>
+      </svg></div>
+  <p class="code">Error 404</p>
+  <h1>This page doesn't exist</h1>
+  <p>The link may be broken or mistyped.</p>
+  <a class="btn" href="/">Back to Mithill Prabhu's portfolio</a>
+</main>
+</body>
+</html>

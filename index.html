@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mithill Prabhu | Robotics &amp; Automation Engineer</title>
+<meta name="description" content="Robotics &amp; Automation Engineer skilled in ROS2, MoveIt2, Pixhawk/MAVLink drones, ESP32 embedded systems and OpenCV/YOLOv8.">
+<meta name="theme-color" content="#ffffff">
+<meta name="color-scheme" content="light dark">
+<script>
+  // Apply saved or system colour scheme before first paint (no flash).
+  (function () {
+    var t;
+    try { t = localStorage.getItem('theme'); } catch (e) {}
+    if (t !== 'light' && t !== 'dark') {
+      t = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    document.documentElement.setAttribute('data-theme', t);
+    if ('IntersectionObserver' in window) document.documentElement.classList.add('reveal-on');
+    document.documentElement.classList.add('js');
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', t === 'dark' ? '#000000' : '#ffffff');
+  })();
+</script>
+<link rel="canonical" href="https://mithillprabhu.github.io/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mithill Prabhu | Robotics &amp; Automation Engineer">
+<meta property="og:description" content="Robotics &amp; Automation Engineer skilled in ROS2, MoveIt2, Pixhawk/MAVLink drones, ESP32 embedded systems and OpenCV/YOLOv8.">
+<meta property="og:image" content="https://mithillprabhu.github.io/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mithill Prabhu, Robotics &amp; Automation Engineer">
+<meta name="twitter:image" content="https://mithillprabhu.github.io/assets/og-image.png">
+<meta property="og:url" content="https://mithillprabhu.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23111111'/%3E%3Ctext x='32' y='41' font-family='ui-monospace,Menlo,Consolas,monospace' font-size='24' font-weight='700' fill='%23fff' text-anchor='middle'%3EMP%3C/text%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mithill Prabhu",
+  "jobTitle": "Robotics & Automation Engineer",
+  "email": "mailto:psmithill27@gmail.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Coimbatore", "addressCountry": "IN" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Amrita Vishwa Vidyapeetham" },
+  "url": "https://mithillprabhu.github.io/",
+  "sameAs": [
+    "https://github.com/MithillPrabhu",
+    "https://www.linkedin.com/in/mithill-prabhu/"
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --text: #111111;
+    --text-2: #5e5e5e;
+    --line: #e6e6e6;
+    --accent: #111111;
+    --accent-press: #333333;
+    --accent-soft: #f2f2f2;
+    --btn-text: #ffffff;
+    --nav-bg: rgba(255, 255, 255, 0.88);
+    --img-bg: #f2f2f2;
+    --grid: rgba(0, 0, 0, 0.055);
+    --max: 1040px;
+    --pad-x: 24px;
+    --section-y: 96px;
+    --nav-h: 56px;
+    --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "SFMono-Regular", "JetBrains Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    color-scheme: light;
+  }
+  [data-theme="dark"] {
+    --bg: #000000;
+    --surface: #0d0d0d;
+    --text: #f2f2f2;
+    --text-2: #a0a0a0;
+    --line: #262626;
+    --accent: #f2f2f2;
+    --accent-press: #d0d0d0;
+    --accent-soft: #1a1a1a;
+    --btn-text: #000000;
+    --nav-bg: rgba(0, 0, 0, 0.85);
+    --img-bg: #141414;
+    --grid: rgba(255, 255, 255, 0.07);
+    color-scheme: dark;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--nav-h);
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: var(--text); text-decoration: none; }
+  .tlink { text-decoration: underline; text-decoration-color: var(--line); text-decoration-thickness: 1px; text-underline-offset: 4px; }
+  a, button { touch-action: manipulation; }
+  p { margin: 0; }
+  h1, h2, h3 { margin: 0; font-weight: 700; color: var(--text); }
+
+  .skip {
+    position: absolute; left: 12px; top: -48px; z-index: 100;
+    background: var(--text); color: var(--bg); padding: 8px 14px; border-radius: 8px; font-size: 14px;
+  }
+  .skip:focus { top: 12px; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
+  .wrap {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding-left: max(var(--pad-x), env(safe-area-inset-left, 0px));
+    padding-right: max(var(--pad-x), env(safe-area-inset-right, 0px));
+  }
+  .mono { font-family: var(--mono); letter-spacing: 0; }
+  .muted { color: var(--text-2); }
+
+  /* ---------- Nav ---------- */
+  .nav {
+    position: sticky; top: 0; z-index: 50;
+    background: var(--nav-bg);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+  .nav .wrap {
+    height: var(--nav-h);
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  }
+  .brand {
+    display: flex; align-items: center; gap: 10px; flex-shrink: 0;
+    color: var(--text); font-weight: 600; font-size: 15px; white-space: nowrap;
+  }
+  .brand-mark {
+    display: grid; place-items: center;
+    width: 28px; height: 28px; border-radius: 7px;
+    background: var(--accent); color: var(--btn-text);
+    font-family: var(--mono); font-size: 11px; font-weight: 700;
+  }
+  .nav-right { display: flex; align-items: center; gap: 20px; min-width: 0; }
+  .nav ul {
+    list-style: none; margin: 0; padding: 0;
+    display: flex; gap: 24px; min-width: 0;
+    overflow-x: auto; scrollbar-width: none;
+  }
+  .nav ul::-webkit-scrollbar { display: none; }
+  .nav ul a {
+    display: block; padding: 14px 0;
+    color: var(--text-2); font-size: 14px; font-weight: 500;
+    white-space: nowrap; user-select: none; -webkit-user-select: none;
+    transition: color 150ms ease;
+  }
+  .nav ul a[aria-current="true"] { color: var(--text); }
+  .nav ul a:active { color: var(--accent); }
+  .theme-toggle {
+    flex-shrink: 0;
+    width: 36px; height: 36px; margin-right: -6px;
+    display: grid; place-items: center;
+    border: 1px solid var(--line); border-radius: 9px; background: var(--surface); padding: 0;
+    color: var(--text); cursor: pointer;
+    user-select: none; -webkit-user-select: none;
+    transition: transform 120ms var(--ease-out), border-color 150ms ease;
+  }
+  .theme-toggle:active { transform: scale(0.92); }
+  .theme-toggle svg { width: 16px; height: 16px; display: block; }
+  html.theme-anim body, html.theme-anim .nav, html.theme-anim .theme-toggle {
+    transition: background-color 250ms ease, color 250ms ease, border-color 250ms ease;
+  }
+
+  /* ---------- Hero ---------- */
+  .hero { position: relative; overflow: hidden; padding: 104px 0 88px; border-bottom: 1px solid var(--line); }
+  .hero-bg {
+    position: absolute; inset: 0; overflow: hidden; pointer-events: none;
+    -webkit-mask-image: radial-gradient(ellipse 65% 85% at 72% 50%, #000 25%, transparent 75%);
+    mask-image: radial-gradient(ellipse 65% 85% at 72% 50%, #000 25%, transparent 75%);
+  }
+  .hero-bg::before {
+    content: ""; position: absolute; left: 0; right: 0; top: -32px; bottom: 0;
+    background-image:
+      linear-gradient(to right, var(--grid) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--grid) 1px, transparent 1px);
+    background-size: 32px 32px;
+    background-position: center top;
+    animation: gridDrift 10s linear infinite;
+    will-change: transform;
+  }
+  @keyframes gridDrift { to { transform: translateY(32px); } }
+  .hero > .wrap { position: relative; z-index: 1; }
+  .hero-inner > * { animation: heroIn 600ms var(--ease-out) both; }
+  .hero-inner > :nth-child(2) { animation-delay: 90ms; }
+  .hero-inner > :nth-child(3) { animation-delay: 180ms; }
+  .hero-inner > :nth-child(4) { animation-delay: 270ms; }
+  .hero-inner > :nth-child(5) { animation-delay: 360ms; }
+  .hero-inner > :nth-child(6) { animation-delay: 450ms; }
+  @keyframes heroIn {
+    from { opacity: 0; transform: translateY(10px); filter: blur(6px); }
+    to   { opacity: 1; transform: none; filter: blur(0); }
+  }
+  .status {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 6px 12px; border-radius: 8px;
+    background: var(--accent-soft); color: var(--text);
+    font-family: var(--mono); font-size: 13px; line-height: 1.4;
+  }
+  .status::before {
+    content: ""; width: 7px; height: 7px; border-radius: 50%;
+    background: #1f9d55; flex-shrink: 0;
+  }
+  .hero h1 {
+    margin-top: 28px;
+    font-size: clamp(40px, 8vw, 64px);
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    overflow-wrap: anywhere;
+  }
+  .hero .role {
+    margin-top: 10px;
+    font-size: clamp(20px, 2.8vw, 26px);
+    line-height: 1.3; font-weight: 500; color: var(--text-2);
+  }
+  .hero .summary {
+    margin-top: 22px; max-width: 620px;
+    font-size: clamp(17px, 2vw, 19px); line-height: 1.6;
+  }
+  .actions { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 46px; padding: 0 22px;
+    border-radius: 10px;
+    font-size: 16px; font-weight: 600; white-space: nowrap;
+    border: 1.5px solid var(--accent);
+    user-select: none; -webkit-user-select: none; -webkit-touch-callout: none;
+    gap: 8px;
+    transition: transform 140ms var(--ease-out), translate 350ms var(--ease-out), background-color 150ms ease, color 150ms ease, border-color 150ms ease;
+  }
+  .btn:active { transform: scale(0.97); }
+  .btn .arr { display: inline-block; transition: transform 250ms var(--ease-out); }
+  .btn-fill { background: var(--accent); color: var(--btn-text); }
+  .btn-fill:active { background: var(--accent-press); border-color: var(--accent-press); }
+  .btn-line { background: transparent; color: var(--accent); }
+  .meta {
+    margin-top: 28px;
+    display: flex; flex-wrap: wrap; gap: 6px 22px;
+    font-size: 15px; color: var(--text-2);
+  }
+  .meta a { overflow-wrap: anywhere; }
+  .tlink { transition: opacity 150ms ease; }
+  .tlink:active { opacity: 0.6; }
+
+  @media (hover: hover) and (pointer: fine) {
+    .nav ul a:hover { color: var(--text); }
+    .theme-toggle:hover { border-color: var(--text-2); }
+    .btn-fill:hover { background: var(--accent-press); border-color: var(--accent-press); }
+    .btn-line:hover { background: var(--accent-soft); }
+    .btn:hover { transition: transform 140ms var(--ease-out), translate 120ms linear, background-color 150ms ease, color 150ms ease, border-color 150ms ease; }
+    .btn:hover .arr { transform: translateX(4px); }
+    .btn:hover .arr-down { transform: translateY(3px); }
+    .tlink:hover { text-decoration-color: currentColor; }
+  }
+
+  /* ---------- Sections: label column + content ---------- */
+  .section { padding: var(--section-y) 0; border-bottom: 1px solid var(--line); }
+  .grid {
+    display: grid;
+    grid-template-columns: 180px minmax(0, 1fr);
+    column-gap: 48px;
+  }
+  .label {
+    font-family: var(--mono); font-size: 13px; color: var(--text-2);
+    padding-top: 10px;
+  }
+  .label b { color: var(--text); font-weight: 600; }
+  h2 {
+    font-size: clamp(28px, 4vw, 38px);
+    line-height: 1.15; letter-spacing: -0.02em;
+    margin-bottom: 32px;
+  }
+
+  /* About */
+  .lead { font-size: clamp(18px, 2.1vw, 21px); line-height: 1.65; max-width: 720px; }
+  .lead + .lead { margin-top: 16px; }
+  .card {
+    margin-top: 40px; padding: 22px 24px;
+    background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+    max-width: 720px;
+  }
+  .card .k { font-family: var(--mono); font-size: 12px; color: var(--text-2); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; }
+  .card p + p { margin-top: 2px; }
+
+  /* Experience */
+  .list { list-style: none; margin: 0; padding: 0 0 0 34px; position: relative; }
+  .list::before, .list::after {
+    content: ""; position: absolute; left: 5px; top: 15px; bottom: 30px; width: 1px;
+  }
+  .list::before { background: var(--line); }
+  .list::after {
+    background: var(--text);
+    transform-origin: top; transform: scaleY(var(--tl, 0));
+  }
+  html:not(.js) .list::after { display: none; }
+  .item { position: relative; padding: 0 0 36px; }
+  .item:last-child { padding-bottom: 0; }
+  .item::before {
+    content: ""; position: absolute; left: -34px; top: 9px;
+    width: 11px; height: 11px; border-radius: 50%;
+    border: 1.5px solid var(--text-2); background: var(--bg);
+    transition: background-color 250ms ease, border-color 250ms ease;
+  }
+  .item.on::before { background: var(--text); border-color: var(--text); }
+  .item-head {
+    display: flex; flex-wrap: wrap; align-items: baseline;
+    justify-content: space-between; column-gap: 24px; row-gap: 2px;
+  }
+  .item-title { min-width: 0; flex: 1 1 300px; }
+  .item-title .r { font-weight: 650; font-size: 19px; }
+  .item-title .o { display: block; color: var(--text-2); font-size: 16px; }
+  .when {
+    font-family: var(--mono); font-size: 13px; color: var(--text-2);
+    white-space: nowrap; flex-shrink: 0;
+  }
+  .item .desc { margin-top: 10px; max-width: 700px; }
+
+  /* Projects */
+  .projects { display: grid; gap: 72px; }
+  .project .num { font-family: var(--mono); font-size: 13px; line-height: 1.5; color: var(--text-2); }
+  .num + h3 { margin-top: 6px; }
+  .project h3 {
+    font-size: clamp(22px, 2.8vw, 28px); line-height: 1.2; letter-spacing: -0.015em;
+  }
+  .project .desc { margin-top: 12px; max-width: 700px; }
+  .project .tech { margin-top: 14px; font-size: 13px; color: var(--text-2); line-height: 1.6; }
+  .project .tech span { color: var(--text); }
+
+  /* Skills */
+  .skill-grid { display: flex; flex-wrap: wrap; gap: 16px; }
+  .skill-card { flex: 1 1 220px; min-width: 0; }
+  .skill-card {
+    padding: 22px 22px 20px;
+    background: var(--surface);
+    border: 1px solid var(--line); border-radius: 12px;
+  }
+  .skill-card h3 { margin-top: 16px; font-size: 17px; line-height: 1.3; font-weight: 600; letter-spacing: -0.01em; }
+  .skill-card ul { list-style: none; margin: 12px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+  .skill-card li {
+    padding: 3px 9px; border: 1px solid var(--line); border-radius: 6px;
+    font-size: 13.5px; line-height: 1.5; color: var(--text-2); white-space: nowrap;
+  }
+  .skill-icon {
+    display: grid; place-items: center;
+    width: 42px; height: 42px; border-radius: 10px;
+    border: 1px solid var(--line); color: var(--text);
+  }
+  .skill-icon svg {
+    width: 22px; height: 22px; fill: none; stroke: currentColor;
+    stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round;
+    transition: transform 300ms var(--ease-out);
+  }
+  .skill-card { transition: border-color 200ms ease, translate 200ms var(--ease-out); }
+  .reveal-on .skill-card.reveal {
+    transition: opacity 500ms var(--ease-out), transform 550ms var(--ease-out), border-color 200ms ease, translate 200ms var(--ease-out);
+    transition-delay: var(--d, 0ms), var(--d, 0ms), 0ms, 0ms;
+  }
+  .skill-icon { transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease; }
+  @media (hover: hover) and (pointer: fine) {
+    .skill-card:hover { border-color: var(--text); translate: 0 -2px; }
+    .skill-card:hover .skill-icon { background: var(--text); border-color: var(--text); color: var(--bg); }
+    .skill-card:hover .skill-icon svg { transform: scale(1.08) rotate(-6deg); }
+  }
+
+  /* Achievements */
+  .plain { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+  .plain li { padding-left: 20px; position: relative; }
+  .plain li::before {
+    content: ""; position: absolute; left: 0; top: 0.72em;
+    width: 8px; height: 1.5px; background: var(--text-2);
+  }
+
+  /* Contact */
+  .contact-links {
+    margin-top: 28px;
+    display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px;
+  }
+  .contact-links a.tlink { overflow-wrap: anywhere; }
+
+  footer {
+    padding: 28px 0 calc(28px + env(safe-area-inset-bottom, 0px));
+    font-size: 13px; color: var(--text-2);
+  }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 820px) {
+    .grid { grid-template-columns: minmax(0, 1fr); }
+    .label { padding-top: 0; margin-bottom: 8px; }
+  }
+  @media (max-width: 734px) {
+    :root { --section-y: 68px; --pad-x: 20px; }
+    body { font-size: 1rem; }
+    .hero { padding: 64px 0 64px; }
+    h2 { margin-bottom: 24px; }
+    .projects { gap: 56px; }
+  }
+  @media (max-width: 620px) {
+    .brand-name { display: none; }
+    .nav ul { gap: 16px; }
+    .nav ul a { font-size: 13px; }
+  }
+  @media (max-width: 520px) {
+    .item-head { flex-direction: column; }
+    .item-title { flex-basis: auto; }
+    .actions .btn { flex: 1 1 auto; padding: 0 16px; }
+    .skill-grid { gap: 10px; }
+    .skill-card { flex-basis: 140px; }
+    .skill-card { padding: 16px 14px; }
+    .skill-card h3 { margin-top: 12px; font-size: 15px; }
+    .skill-card li { font-size: 12.5px; padding: 2px 7px; }
+    .skill-icon { width: 36px; height: 36px; }
+  }
+  @media (max-width: 400px) {
+    :root { --pad-x: 16px; }
+    .brand { display: none; }
+    .status { font-size: 12px; }
+    .nav-right { gap: 10px; width: 100%; justify-content: space-between; }
+    .nav ul { gap: 12px; }
+    .nav ul a { font-size: 12.5px; }
+    .theme-toggle { width: 32px; height: 32px; margin-right: 0; }
+  }
+  @media (max-width: 340px) {
+    .nav ul { gap: 8px; }
+    .nav ul a { font-size: 11.5px; }
+  }
+
+  /* ---------- Hero robot arm (line drawing) ---------- */
+  .hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
+    column-gap: 48px; align-items: center;
+  }
+  .hero-art .pt { animation: ptIn 450ms var(--ease-out) var(--pd, 0ms) both; }
+  .hero-art .draw { stroke-dasharray: 1; animation: drawIn 800ms var(--ease-out) 80ms both; }
+  @keyframes ptIn { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes drawIn { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+  .hero-art .dim.pt { animation-name: dimIn; }
+  @keyframes dimIn { from { opacity: 0; } to { opacity: 0.6; } }
+  .hero-art svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .hero-art .ln {
+    fill: var(--bg); stroke: var(--text);
+    stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round;
+    vector-effect: non-scaling-stroke;
+  }
+  .hero-art path.ln:not([d$="Z"]) { fill: none; }
+  .hero-art .dim {
+    fill: none; stroke: var(--text-2); stroke-width: 1;
+    stroke-dasharray: 3 6; opacity: 0.6;
+    vector-effect: non-scaling-stroke;
+  }
+  .hero-art .j { transform-box: view-box; animation: 1500ms cubic-bezier(0.65, 0, 0.35, 1) 550ms both; }
+  .hero-art .j1 { transform-origin: 200px 330px; animation-name: j1; }
+  .hero-art .j2 { transform-origin: 140px 180px; animation-name: j2; }
+  .hero-art .j3 { transform-origin: 300px 140px; animation-name: j3; }
+  .hero-art .ax { fill: none; stroke: var(--text-2); stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+  .hero-art .lbl { font-family: var(--mono); font-size: 11px; fill: var(--text-2); }
+  .hero-art .j { will-change: rotate; }
+  .hero-art { position: relative; }
+  .hero-art .grab { fill: transparent; stroke: none; cursor: grab; touch-action: none; pointer-events: all; }
+  .hero-art.dragging .grab, .hero-art.dragging { cursor: grabbing; }
+  .drag-hint {
+    margin: 6px 0 0; text-align: center;
+    font-family: var(--mono); font-size: 12px; color: var(--text-2);
+    animation: ptIn 500ms var(--ease-out) 1600ms both;
+    transition: opacity 400ms ease;
+  }
+  .drag-hint.gone { opacity: 0; }
+  .hero-art.dragging .ln { stroke-width: 1.7; }
+
+  /* ---------- Project details ---------- */
+  .more { margin-top: 10px; max-width: 700px; }
+  .more summary {
+    display: inline-flex; align-items: center; gap: 8px;
+    list-style: none; cursor: pointer;
+    font-family: var(--mono); font-size: 13px; color: var(--text);
+    padding: 4px 0; user-select: none; -webkit-user-select: none;
+  }
+  .more summary::-webkit-details-marker { display: none; }
+  .plus { position: relative; width: 10px; height: 10px; transition: transform 250ms var(--ease-out); }
+  .plus::before, .plus::after { content: ""; position: absolute; background: currentColor; }
+  .plus::before { left: 0; right: 0; top: 4.5px; height: 1.2px; }
+  .plus::after { top: 0; bottom: 0; left: 4.5px; width: 1.2px; }
+  .more[open] .plus { transform: rotate(45deg); }
+  .more-body { padding: 6px 0 2px 14px; border-left: 1px solid var(--line); margin-top: 6px; }
+  .more[open] .more-body { animation: moreIn 300ms var(--ease-out); }
+  @keyframes moreIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+  @media (hover: hover) and (pointer: fine) { .more summary:hover { text-decoration: underline; text-underline-offset: 4px; } }
+
+  /* ---------- Scroll progress, back-to-top, toast ---------- */
+  .progress {
+    position: absolute; left: 0; right: 0; bottom: -1px; height: 2px;
+    background: var(--text); transform-origin: left; transform: scaleX(var(--p, 0));
+    pointer-events: none;
+  }
+  .to-top {
+    position: fixed; z-index: 60;
+    right: max(20px, env(safe-area-inset-right, 0px));
+    bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+    width: 44px; height: 44px; border-radius: 50%;
+    display: grid; place-items: center; padding: 0; cursor: pointer;
+    background: var(--surface); color: var(--text); border: 1px solid var(--line);
+    box-shadow: 0 8px 24px -14px rgba(0, 0, 0, 0.35);
+    opacity: 0; transform: translateY(10px) scale(0.95); pointer-events: none;
+    transition: opacity 250ms ease, transform 300ms var(--ease-out), border-color 150ms ease;
+    touch-action: manipulation; user-select: none; -webkit-user-select: none;
+  }
+  .to-top.show { opacity: 1; transform: none; pointer-events: auto; }
+  .to-top:active { transform: scale(0.94); }
+  .to-top svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+  @media (hover: hover) and (pointer: fine) { .to-top:hover { border-color: var(--text); } }
+  .toast {
+    position: fixed; z-index: 70; left: 50%;
+    bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+    transform: translate(-50%, 12px); opacity: 0; pointer-events: none;
+    padding: 10px 16px; border-radius: 10px;
+    background: var(--text); color: var(--bg);
+    font-family: var(--mono); font-size: 13px; white-space: nowrap;
+    transition: opacity 200ms ease, transform 300ms var(--ease-out);
+  }
+  .toast.show { opacity: 1; transform: translate(-50%, 0); }
+  @keyframes artIn { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes j1 { from { transform: rotate(12deg); } to { transform: none; } }
+  @keyframes j2 { from { transform: rotate(-24deg); } to { transform: none; } }
+  @keyframes j3 { from { transform: rotate(22deg); } to { transform: none; } }
+  @media (max-width: 820px) {
+    .hero-grid { grid-template-columns: minmax(0, 1fr); }
+    .hero-art { width: 100%; max-width: 260px; margin: 48px auto 0; }
+  }
+
+  /* ---------- Scroll reveal ---------- */
+  .reveal-on .reveal {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 500ms var(--ease-out), transform 550ms var(--ease-out);
+    transition-delay: var(--d, 0ms);
+  }
+  .reveal-on .reveal.in { opacity: 1; transform: none; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal-on .reveal { transform: none; transition: opacity 300ms ease; }
+    .hero-art .j { animation: none; }
+    .skill-card:hover { translate: none; }
+    .skill-card:hover .skill-icon svg { transform: none; }
+    html { scroll-behavior: auto; }
+    .hero-inner > * { animation: fadeOnly 200ms ease both; animation-delay: 0ms !important; }
+    .hero-bg::before { animation: none; }
+    .hero-art .pt, .hero-art .draw { animation: fadeOnly 200ms ease both; animation-delay: 0ms; }
+    .hero-art .dim.pt { animation: none; }
+    .hero-art .draw { stroke-dasharray: none; }
+    .btn .arr { transition: none; }
+    .to-top, .toast, .plus { transition: opacity 150ms ease; }
+    .more[open] .more-body { animation: none; }
+    .btn:active, .theme-toggle:active { transform: none; }
+  }
+  @keyframes fadeOnly { from { opacity: 0; } to { opacity: 1; } }
+  @media (prefers-reduced-transparency: reduce) {
+    .nav { background: var(--bg); -webkit-backdrop-filter: none; backdrop-filter: none; }
+  }
+  @media print {
+    .nav, .actions, .theme-toggle { display: none; }
+    .reveal-on .reveal { opacity: 1 !important; transform: none !important; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <nav class="wrap" aria-label="Primary">
+    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">MP</span><span class="brand-name">Mithill Prabhu</span></a>
+    <div class="nav-right">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark colours" aria-pressed="false">
+        <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 2.5a7.5 7.5 0 0 1 0 15z" fill="currentColor"/></svg>
+      </button>
+    </div>
+  </nav>
+  <div class="progress" aria-hidden="true"></div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+    <div class="hero-inner">
+      <p class="status">Available for full-time roles · Dec 2026</p>
+      <h1>Mithill Prabhu</h1>
+      <p class="role">Robotics &amp; Automation Engineer</p>
+      <p class="summary">I design and build robotic systems across mechanical design, electronics and software, with hands-on work in ROS2, drones and computer vision. Final-year B.Tech student based in Coimbatore, India.</p>
+      <div class="actions">
+        <a class="btn btn-fill" href="Mithill_Prabhu_Resume.pdf" download>Download Resume <span class="arr arr-down" aria-hidden="true">↓</span></a>
+        <a class="btn btn-line" href="#projects">View Projects <span class="arr" aria-hidden="true">→</span></a>
+      </div>
+      <p class="meta">
+        <a class="tlink copy-email" href="mailto:psmithill27@gmail.com" title="Click to copy">psmithill27@gmail.com</a>
+        <a class="tlink" href="https://github.com/MithillPrabhu" target="_blank" rel="noopener">GitHub</a>
+        <a class="tlink" href="https://www.linkedin.com/in/mithill-prabhu/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="tlink" href="Mithill_Prabhu_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+      </p>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 400 420" focusable="false">
+        <path class="dim pt" style="--pd:950ms" d="M10 330 A190 190 0 0 1 390 330"/>
+        <line class="dim pt" style="--pd:1000ms" x1="200" y1="330" x2="200" y2="120"/>
+        <line class="ln draw" pathLength="1" x1="30" y1="400" x2="370" y2="400"/>
+        <path class="ax pt" style="--pd:1100ms" d="M52 386 H86 M81 382.5 L86 386 L81 389.5 M52 386 V352 M48.5 357 L52 352 L55.5 357"/>
+        <text class="lbl pt" style="--pd:1150ms" x="90" y="389.5">X</text>
+        <text class="lbl pt" style="--pd:1150ms" x="58" y="356">Z</text>
+        <path class="ln pt" style="--pd:250ms" d="M130 400 L146 368 L254 368 L270 400 Z"/>
+        <rect class="ln pt" style="--pd:340ms" x="150" y="350" width="100" height="18" rx="4"/>
+        <path class="ln pt" style="--pd:400ms" d="M176 350 L184 334 M224 350 L216 334"/>
+        <g class="j j1">
+          <rect class="ln pt" style="--pd:480ms" x="0" y="-18" width="161.6" height="36" rx="18" transform="translate(200 330) rotate(-111.8)"/>
+          <line class="dim pt" style="--pd:1000ms" x1="178" y1="290" x2="152" y2="224"/>
+          <g class="j j2">
+            <rect class="ln pt" style="--pd:620ms" x="0" y="-14" width="164.9" height="28" rx="14" transform="translate(140 180) rotate(-14.04)"/>
+            <g class="j j3">
+              <rect class="ln pt" style="--pd:760ms" x="292" y="140" width="16" height="44" rx="3"/>
+              <rect class="ln pt" style="--pd:800ms" x="274" y="184" width="52" height="10" rx="3"/>
+              <path class="ln pt" style="--pd:840ms" d="M283 194 V222 L290 230 M317 194 V222 L310 230"/>
+              <circle class="ln pt" style="--pd:760ms" cx="300" cy="140" r="12"/>
+              <circle class="ln pt" style="--pd:760ms" cx="300" cy="140" r="3.5"/>
+              <path class="ax pt" style="--pd:1250ms" d="M311 133 L328 122"/>
+              <text class="lbl pt" style="--pd:1250ms" x="331" y="122">J3</text>
+              <circle class="grab" cx="300" cy="170" r="42"/>
+            </g>
+            <circle class="ln pt" style="--pd:620ms" cx="140" cy="180" r="18"/>
+            <circle class="ln pt" style="--pd:620ms" cx="140" cy="180" r="5"/>
+            <path class="ax pt" style="--pd:1200ms" d="M124 171 L107 160"/>
+            <text class="lbl pt" style="--pd:1200ms" x="104" y="160" text-anchor="end">J2</text>
+          </g>
+          <circle class="ln pt" style="--pd:480ms" cx="200" cy="330" r="24"/>
+          <circle class="ln pt" style="--pd:480ms" cx="200" cy="330" r="7"/>
+          <path class="ax pt" style="--pd:1150ms" d="M222 320 L242 309"/>
+          <text class="lbl pt" style="--pd:1150ms" x="245" y="309">J1</text>
+        </g>
+      </svg>
+      <p class="drag-hint">Drag the gripper ↗</p>
+    </div>
+    </div>
+  </section>
+
+  <section class="section" id="about" aria-labelledby="about-h">
+    <div class="wrap grid">
+      <p class="label"><b>01</b> / About</p>
+      <div>
+        <h2 id="about-h">About</h2>
+        <p class="lead">Final-year Robotics and Automation Engineering student at Amrita Vishwa Vidyapeetham, Coimbatore, with hands-on experience across drones, ground robots, an industrial robot arm and an automated sorting system.</p>
+        <p class="lead">My work spans the full robot: mechanical design, embedded electronics, computer vision, and motion planning and navigation, with a strong focus on integrating these into one working system.</p>
+        <div class="card">
+          <p class="k">Education</p>
+          <p><strong>B.Tech in Mechatronics, Robotics and Automation Engineering</strong></p>
+          <p>Amrita Vishwa Vidyapeetham, Coimbatore</p>
+          <p class="muted">Aug 2023 – Jul 2027</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="experience" aria-labelledby="exp-h">
+    <div class="wrap grid">
+      <p class="label"><b>02</b> / Experience</p>
+      <div>
+        <h2 id="exp-h">Experience</h2>
+        <ol class="list" reversed>
+          <li class="item">
+            <div class="item-head">
+              <p class="item-title"><span class="r">Robotics / ROS2 Intern</span><span class="o">Grow i Tech</span></p>
+              <p class="when">Jun 2026 – Present</p>
+            </div>
+            <p class="desc">Building a ROS2/MoveIt2 setup for the FANUC ER-4iA robot arm so it can plan its own movements, and validating those movements in RViz2 and Gazebo simulation.</p>
+          </li>
+          <li class="item">
+            <div class="item-head">
+              <p class="item-title"><span class="r">Student Intern</span><span class="o">Merlin Automation Solutions Pvt. Ltd.</span></p>
+              <p class="when">Apr 2026 – May 2026</p>
+            </div>
+            <p class="desc">Tested and troubleshot PLC-controlled machines and industrial robots on live automation systems, including hardware validation.</p>
+          </li>
+          <li class="item">
+            <div class="item-head">
+              <p class="item-title"><span class="r">Student Intern</span><span class="o">GOAT Robotics</span></p>
+              <p class="when">Apr 2025 – May 2025</p>
+            </div>
+            <p class="desc">Built FlexSim simulations of warehouse robots to study their routing and find more efficient ways to move material through the warehouse.</p>
+          </li>
+          <li class="item">
+            <div class="item-head">
+              <p class="item-title"><span class="r">Vehicle Dynamics Engineer</span><span class="o">MotoAmrita – SAE MotoStudent India</span></p>
+              <p class="when">Dec 2023 – Nov 2024</p>
+            </div>
+            <p class="desc">Member of the team whose race motorcycle won SAE MotoStudent India. Designed the triple clamp in SolidWorks and supported assembly, alignment and troubleshooting of the steering and front end.</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects" aria-labelledby="proj-h">
+    <div class="wrap grid">
+      <p class="label"><b>03</b> / Projects</p>
+      <div>
+        <h2 id="proj-h">Projects</h2>
+        <div class="projects">
+          <article class="project">
+            <p class="num">2026 – Present</p>
+            <h3>ESP32-S3 Based UAV–AMR System for Precision Agriculture</h3>
+            <p class="desc">A drone and a ground robot that work together to monitor crops and act only where needed.</p>
+            <details class="more"><summary>Details<span class="plus" aria-hidden="true"></span></summary><div class="more-body"><p>I'm designing the airframe and chassis, planning the weight and power budgets, and building the ESP32-S3 electronics that control both machines and keep them in contact.</p></div></details>
+            <p class="tech mono">Built with: <span>ESP32-S3 · Computer Vision · UAV · AMR</span></p>
+          </article>
+          <article class="project">
+            <h3>Autonomous Quadcopter for Campus Traffic Monitoring</h3>
+            <p class="desc">Built and flew a Pixhawk drone that completes pre-planned routes on its own and detects vehicles using YOLOv8 and OpenCV.</p>
+            <details class="more"><summary>Details<span class="plus" aria-hidden="true"></span></summary><div class="more-body"><p>The camera runs on a vibration-isolated Raspberry Pi 4 mount for clear images in flight.</p></div></details>
+            <p class="tech mono">Built with: <span>Pixhawk · MAVLink · YOLOv8 · OpenCV · Raspberry Pi</span></p>
+          </article>
+          <article class="project">
+            <h3>AI-Based Industrial Sorting Station</h3>
+            <p class="desc">A conveyor system that uses a camera to classify items as metal, non-metal or reject and sorts them automatically.</p>
+            <details class="more"><summary>Details<span class="plus" aria-hidden="true"></span></summary><div class="more-body"><p>I designed the conveyor, the servo-driven diverter and the sensor mounts.</p></div></details>
+            <p class="tech mono">Built with: <span>Raspberry Pi · ESP32 · OpenCV · Servo Actuation</span></p>
+          </article>
+          <article class="project">
+            <h3>18-DOF Autonomous Hexapod Robot</h3>
+            <p class="desc">A six-legged walking robot with 18 servo motors, three per leg.</p>
+            <details class="more"><summary>Details<span class="plus" aria-hidden="true"></span></summary><div class="more-body"><p>I designed the leg mechanism in SolidWorks from joint torque estimates, and wrote the ESP32 firmware and Python scripts used to calibrate and test each motor.</p></div></details>
+            <p class="tech mono">Built with: <span>ESP32 · Servo Control · SolidWorks · Python</span></p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills" aria-labelledby="skills-h">
+    <div class="wrap grid">
+      <p class="label"><b>04</b> / Skills</p>
+      <div>
+        <h2 id="skills-h">Skills</h2>
+        <div class="skill-grid">
+          <div class="skill-card"><span class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M13.5 5l-3 14"/></svg></span><h3>Programming</h3><ul><li>Python</li><li>C++</li><li>MATLAB</li></ul></div>
+          <div class="skill-card"><span class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h16M7 20l1.5-3h7L17 20"/><circle cx="12" cy="14.5" r="1.8"/><path d="M12 12.7L9 6.5M9 6.5l7-1.5M16 5v3.5M14.5 8.5h3M15 8.5v2M17 8.5v2"/><circle cx="9" cy="6.5" r="1.3"/></svg></span><h3>Robotics</h3><ul><li>ROS 2</li><li>MoveIt 2</li><li>Nav2</li><li>Gazebo</li><li>MAVLink</li></ul></div>
+          <div class="skill-card"><span class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3.2"/></svg></span><h3>Computer Vision</h3><ul><li>OpenCV</li><li>YOLOv8</li><li>Calibration</li></ul></div>
+          <div class="skill-card"><span class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="6.5" y="6.5" width="11" height="11" rx="1.5"/><rect x="9.5" y="9.5" width="5" height="5" rx=".5"/><path d="M9.5 3v3.5M14.5 3v3.5M9.5 17.5V21M14.5 17.5V21M3 9.5h3.5M3 14.5h3.5M17.5 9.5H21M17.5 14.5H21"/></svg></span><h3>Embedded</h3><ul><li>ESP32</li><li>Raspberry Pi</li><li>Arduino</li><li>Pixhawk</li></ul></div>
+          <div class="skill-card"><span class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.8l1.4 2.4 2.7-.6.6 2.7 2.4 1.4-1.2 2.5 1.2 2.5-2.4 1.4-.6 2.7-2.7-.6L12 21.2l-1.4-2.4-2.7.6-.6-2.7-2.4-1.4 1.2-2.5-1.2-2.5 2.4-1.4.6-2.7 2.7.6z"/><circle cx="12" cy="12" r="3"/></svg></span><h3>Mechanical Design</h3><ul><li>SolidWorks</li><li>Fusion 360</li><li>AutoCAD</li></ul></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="achievements" aria-labelledby="ach-h">
+    <div class="wrap grid">
+      <p class="label"><b>05</b> / Achievements</p>
+      <div>
+        <h2 id="ach-h">Achievements &amp; Leadership</h2>
+        <ul class="plain">
+          <li>Winner, SAE MotoStudent India <span class="muted">(MotoAmrita team)</span></li>
+          <li>Semi-finalist, Smart India Hackathon 2025</li>
+          <li>Club Secretary, IETE Student Chapter – Amrita <span class="muted">(Jun 2025 – Jun 2026)</span></li>
+          <li>Robotics Engineer, Intel IoT Club <span class="muted">(Sep 2024 – Mar 2025)</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact" aria-labelledby="contact-h" style="border-bottom:0">
+    <div class="wrap grid">
+      <p class="label"><b>06</b> / Contact</p>
+      <div>
+        <h2 id="contact-h">Contact</h2>
+        <p class="lead">I'm looking for robotics, drone and automation engineering roles. The best way to reach me is email.</p>
+        <div class="contact-links">
+          <a class="btn btn-fill" href="mailto:psmithill27@gmail.com">Send an email <span class="arr" aria-hidden="true">→</span></a>
+          <a class="tlink copy-email" href="mailto:psmithill27@gmail.com" title="Click to copy">psmithill27@gmail.com</a>
+          <a class="tlink" href="https://www.linkedin.com/in/mithill-prabhu/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="tlink" href="https://github.com/MithillPrabhu" target="_blank" rel="noopener">GitHub</a>
+          <a class="tlink" href="Mithill_Prabhu_Resume.pdf" download>Download Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<button class="to-top" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M10 15V5M5 9.5L10 4.5l5 5"/></svg>
+</button>
+<div class="toast" role="status" aria-live="polite"></div>
+
+<footer>
+  <div class="wrap">© 2026 Mithill Prabhu</div>
+</footer>
+
+<script>
+  // Colour toggle: switches light/dark and remembers the choice.
+  (function () {
+    var root = document.documentElement;
+    var btn = document.querySelector('.theme-toggle');
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (!btn) return;
+    function sync() {
+      var dark = root.getAttribute('data-theme') === 'dark';
+      btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
+      btn.setAttribute('aria-label', dark ? 'Switch to light colours' : 'Switch to dark colours');
+      if (meta) meta.setAttribute('content', dark ? '#000000' : '#ffffff');
+    }
+    sync();
+    btn.addEventListener('click', function () {
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.classList.add('theme-anim');
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      sync();
+      setTimeout(function () { root.classList.remove('theme-anim'); }, 300);
+    });
+  })();
+
+  // Fade sections in as they scroll into view (once each), with a small stagger inside lists.
+  (function () {
+    if (!document.documentElement.classList.contains('reveal-on')) return;
+    var targets = document.querySelectorAll(
+      '.section .label, .section h2, .section .lead, .card, .item, .project, .skill-card, .plain li, .contact-links'
+    );
+    targets.forEach(function (el) {
+      var i = 0, sib = el.previousElementSibling;
+      while (sib) { if (sib.tagName === el.tagName && sib.className === el.className) i++; sib = sib.previousElementSibling; }
+      el.style.setProperty('--d', Math.min(i * 70, 280) + 'ms');
+      el.classList.add('reveal');
+    });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    targets.forEach(function (el) { io.observe(el); });
+  })();
+
+  // Robot arm: assembles on load, idles gently, follows the mouse, and can be dragged by the gripper
+  // (two-link inverse kinematics keeps the gripper pointing down). Springs back to rest on release.
+  (function () {
+    var wrap = document.querySelector('.hero-art'), art = wrap && wrap.querySelector('svg');
+    if (!art || !window.matchMedia) return;
+    var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var follow = !reduce && matchMedia('(hover: hover) and (pointer: fine)').matches;
+    var j = [art.querySelector('.j1'), art.querySelector('.j2'), art.querySelector('.j3')];
+    var grab = art.querySelector('.grab'), hint = wrap.querySelector('.drag-hint');
+    var cur = [0, 0, 0], tgt = [0, 0, 0], t0 = performance.now(), visible = true, raf = 0, drag = false, dragW = 0;
+
+    // geometry of the drawing (SVG units)
+    var S = { x: 200, y: 330 }, L1 = 161.6, L2 = 164.9;
+    var A1 = Math.atan2(180 - 330, 140 - 200), A2 = Math.atan2(140 - 180, 300 - 140);
+    var R2D = 180 / Math.PI;
+    function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
+
+    function ik(tx, ty) {
+      var dx = tx - S.x, dy = ty - S.y, d = Math.sqrt(dx * dx + dy * dy);
+      d = clamp(d, Math.abs(L1 - L2) + 20, L1 + L2 - 2);
+      var phi = Math.atan2(dy, dx);
+      var A = Math.acos(clamp((L1 * L1 + d * d - L2 * L2) / (2 * L1 * d), -1, 1));
+      var a1 = phi - A;                                        // elbow-up solution, like the drawing
+      var ex = S.x + L1 * Math.cos(a1), ey = S.y + L1 * Math.sin(a1);
+      var wx = S.x + d * Math.cos(phi), wy = S.y + d * Math.sin(phi);
+      var a2 = Math.atan2(wy - ey, wx - ex);
+      var r1 = (a1 - A1) * R2D, r2 = (a2 - A2) * R2D - r1;
+      return [r1, r2, -(r1 + r2)];                             // wrist cancels so the gripper stays vertical
+    }
+    function toSvg(e) {
+      var p = art.createSVGPoint(); p.x = e.clientX; p.y = e.clientY;
+      var m = art.getScreenCTM(); return m ? p.matrixTransform(m.inverse()) : { x: 300, y: 140 };
+    }
+
+    function apply(idle) {
+      for (var i = 0; i < 3; i++) j[i].style.rotate = (cur[i] + (idle ? idle[i] : 0)).toFixed(3) + 'deg';
+    }
+    function tick(now) {
+      var t = (now - t0) / 1000;
+      var ramp = reduce ? 0 : clamp((t - 2.1) / 1.5, 0, 1) * (1 - dragW);
+      var i1 = Math.sin(t * 0.9) * 1.1 * ramp, i2 = Math.sin(t * 0.7 + 1.3) * 1.6 * ramp;
+      var k = drag ? 0.35 : 0.07;
+      dragW += ((drag ? 1 : 0) - dragW) * 0.08;
+      for (var i = 0; i < 3; i++) cur[i] += (tgt[i] - cur[i]) * k;
+      apply([i1, i2, -(i1 + i2) * 0.85]);
+      var settled = Math.abs(tgt[0] - cur[0]) + Math.abs(tgt[1] - cur[1]) + Math.abs(tgt[2] - cur[2]) < 0.02;
+      raf = (visible && (!reduce || drag || !settled)) ? requestAnimationFrame(tick) : 0;
+    }
+    function start() { if (!raf) raf = requestAnimationFrame(tick); }
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (es) { visible = es[0].isIntersecting; if (visible) start(); }).observe(art);
+    }
+    function neutral() { if (!drag) tgt = [0, 0, 0]; }
+
+    if (follow) {
+      window.addEventListener('pointermove', function (e) {
+        if (drag) return;
+        var r = art.getBoundingClientRect();
+        if (r.bottom < 0) return;
+        var nx = clamp((e.clientX - (r.left + r.width / 2)) / (window.innerWidth / 2), -1, 1);
+        var ny = clamp((e.clientY - (r.top + r.height / 2)) / (window.innerHeight / 2), -1, 1);
+        tgt[0] = nx * 6; tgt[1] = -ny * 7 + nx * 2; tgt[2] = -(tgt[0] + tgt[1]) * 0.85;
+      }, { passive: true });
+      document.documentElement.addEventListener('mouseleave', neutral);
+      window.addEventListener('blur', neutral);
+    }
+
+    // drag the gripper
+    var off = { x: 0, y: 0 };
+    grab.addEventListener('pointerdown', function (e) {
+      e.preventDefault();
+      drag = true; wrap.classList.add('dragging');
+      if (hint) hint.classList.add('gone');
+      try { grab.setPointerCapture(e.pointerId); } catch (err) {}
+      // current wrist position, so the arm doesn't jump to the finger
+      var a1 = A1 + cur[0] / R2D, a2 = A2 + (cur[0] + cur[1]) / R2D;
+      var wx = S.x + L1 * Math.cos(a1) + L2 * Math.cos(a2), wy = S.y + L1 * Math.sin(a1) + L2 * Math.sin(a2);
+      var p = toSvg(e); off.x = wx - p.x; off.y = wy - p.y;
+      start();
+    });
+    grab.addEventListener('pointermove', function (e) {
+      if (!drag) return;
+      var p = toSvg(e);
+      var tx = p.x + off.x, ty = Math.min(p.y + off.y, 360);  // keep the wrist above the floor
+      tgt = ik(tx, ty);
+    });
+    function end() {
+      if (!drag) return;
+      drag = false; wrap.classList.remove('dragging');
+      tgt = [0, 0, 0];
+      if (reduce) { cur = [0, 0, 0]; apply(null); }
+      start();
+    }
+    grab.addEventListener('pointerup', end);
+    grab.addEventListener('pointercancel', end);
+    grab.addEventListener('lostpointercapture', end);
+
+    start();
+  })();
+
+  // Click an email address to copy it (falls back to opening the mail app).
+  (function () {
+    var toast = document.querySelector('.toast'), timer = 0;
+    function show(msg) {
+      if (!toast) return;
+      toast.textContent = msg; toast.classList.add('show');
+      clearTimeout(timer); timer = setTimeout(function () { toast.classList.remove('show'); }, 1800);
+    }
+    document.querySelectorAll('.copy-email').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        if (!navigator.clipboard || !window.isSecureContext) return;   // let mailto work normally
+        e.preventDefault();
+        navigator.clipboard.writeText('psmithill27@gmail.com').then(
+          function () { show('Email copied ✓'); },
+          function () { window.location.href = a.href; }
+        );
+      });
+    });
+  })();
+
+  // Scroll progress line + back-to-top button.
+  (function () {
+    var bar = document.querySelector('.progress'), top = document.querySelector('.to-top'), ticking = false;
+    function update() {
+      ticking = false;
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      var p = h > 0 ? Math.min(1, Math.max(0, window.scrollY / h)) : 0;
+      if (bar) bar.style.setProperty('--p', p.toFixed(4));
+      if (top) top.classList.toggle('show', window.scrollY > window.innerHeight * 0.9);
+    }
+    window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+    window.addEventListener('resize', update, { passive: true });
+    if (top) top.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    });
+    update();
+  })();
+
+  // Magnetic buttons: drift a few pixels toward the cursor (mouse only).
+  (function () {
+    if (!window.matchMedia || !matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    document.querySelectorAll('.btn').forEach(function (b) {
+      b.addEventListener('pointermove', function (e) {
+        var r = b.getBoundingClientRect();
+        var dx = (e.clientX - (r.left + r.width / 2)) / (r.width / 2);
+        var dy = (e.clientY - (r.top + r.height / 2)) / (r.height / 2);
+        b.style.translate = (dx * 5).toFixed(2) + 'px ' + (dy * 3).toFixed(2) + 'px';
+      });
+      b.addEventListener('pointerleave', function () { b.style.translate = ''; });
+    });
+  })();
+
+
+  // Experience timeline: the line draws as you scroll and each dot fills when reached.
+  (function () {
+    var list = document.querySelector('#experience .list');
+    if (!list) return;
+    var items = list.querySelectorAll('.item');
+    var ticking = false;
+    function update() {
+      ticking = false;
+      var r = list.getBoundingClientRect();
+      var trackTop = 15, trackLen = r.height - 45;
+      var reach = window.innerHeight * 0.6 - (r.top + trackTop);
+      var p = Math.max(0, Math.min(1, reach / trackLen));
+      list.style.setProperty('--tl', p.toFixed(4));
+      var drawn = trackTop + p * trackLen;
+      items.forEach(function (it) {
+        it.classList.toggle('on', it.offsetTop + 14 <= drawn + 1);
+      });
+    }
+    function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(update); } }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
+    update();
+  })();
+
+  // Highlight the nav link for the section currently in view.
+  (function () {
+    var links = document.querySelectorAll('.nav ul a');
+    if (!('IntersectionObserver' in window) || !links.length) return;
+    var map = {};
+    links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting || !map[e.target.id]) return;
+        links.forEach(function (a) { a.removeAttribute('aria-current'); });
+        map[e.target.id].setAttribute('aria-current', 'true');
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    Object.keys(map).forEach(function (id) {
+      var s = document.getElementById(id);
+      if (s) io.observe(s);
+    });
+  })();
+</script>
+</body>
+</html>
